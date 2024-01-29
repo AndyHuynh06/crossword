@@ -170,11 +170,13 @@ function lockcell2(childElement, color) {
 
 document.addEventListener("DOMContentLoaded", function() {
     const words = document.querySelectorAll('.word');
+    const table = document.querySelector('.crossword');
+    console.log(table.clientWidth)
 
     words.forEach(word => {
         const x = parseInt(word.getAttribute('x'));
         const y = parseInt(word.getAttribute('y'));
-        const cellWidth = 45; // Adjust this value according to your cell width
+        const cellWidth = table.clientWidth/12; // Adjust this value according to your cell width
         const cellOffset = 1; // Offset for starting point
 
         const leftPosition = (x - cellOffset) * cellWidth;
