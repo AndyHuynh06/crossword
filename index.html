@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Crossword test</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="start_btn">
+        <button>Start round</button>
+    </div>
+
+    <div class="info_box">
+        <div class="info-title"><span>Some rules of this competition</span></div>
+        <div class="info-list">
+            <div class="info">1. Enter a rule here</div>
+            <div class="info">2. Enter a rule here</div>
+            <div class="info">3. Enter a rule here</div>
+            <div class="info">4. Enter a rule here</div>
+            <div class="info">5. Enter a rule here</div>
+            <div class="info">6. Enter a rule here</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Exit</button>
+            <button class="restart">Start</button>
+        </div>
+    </div>
+
+    <section class="container">
+        <div class="header">
+            <h1>Name of the competition</h1>
+        </div>
+        <div class="main-frame">
+            <div class="grid-frame">
+                <div class="crossword">
+                    <div class="word vertical" id="113" self-word="113" go-word="23453" go-link-index="4" self-link-index="2"  num="2." go-word2="1034" go-link-index2="0" self-link-index2="1" 
+                    x="6"  y="3">
+                        <input class="cell" type="text" data-index="0" data-char="1">
+                        <input class="cell" type="text" data-index="1" data-char="1" link="2" oninput="updateOtherInput2(this)">
+                        <input class="cell" type="text" data-index="2" data-char="3" link="1" oninput="updateOtherInput(this)">
+                    </div>
+                    <div class="word horizontal"  self-word="23453" go-word="113" go-link-index="2" self-link-index="4" go-word2="235136" go-link-index2="4" self-link-index2="1" num="1."
+                    x="2"  y="5">
+                        <input class="cell" type="text" data-index="0" data-char="2">
+                        <input class="cell" type="text" data-index="1" data-char="3" link="2" oninput="updateOtherInput2(this)">
+                        <input class="cell" type="text" data-index="2" data-char="4">
+                        <input class="cell" type="text" data-index="3" data-char="5">
+                        <input class="cell" type="text" data-index="4" data-char="3" link="1" oninput="updateOtherInput(this)">
+                    </div>
+                    <div class="word horizontal"  id="1333" self-word="1333" go-word="235136" go-link-index="1" self-link-index="2" num="3."
+                    x="1"  y="2">
+                        <input class="cell" type="text" data-index="0" data-char="1">
+                        <input class="cell" type="text" data-index="1" data-char="3">
+                        <input class="cell" type="text" data-index="2" data-char="3"link="1" oninput="updateOtherInput(this)">
+                        <input class="cell" type="text" data-index="3" data-char="3">
+                    </div>
+                    <div class="word vertical" self-word="235136" go-word="23453" go-link-index="1" self-link-index="4" go-word2="1333" go-link-index2="2" self-link-index2="1" num="4."
+                    x="3"  y="1">
+                        <input class="cell" type="text" data-index="0" data-char="2">
+                        <input class="cell" type="text" data-index="1" data-char="3" link="2" oninput="updateOtherInput2(this)">
+                        <input class="cell" type="text" data-index="2" data-char="5">
+                        <input class="cell" type="text" data-index="3" data-char="1">
+                        <input class="cell" type="text" data-index="4" data-char="3" link="1" oninput="updateOtherInput(this)">
+                        <input class="cell" type="text" data-index="5" data-char="6">
+                    </div>
+                    <div class="word horizontal" id="1034" self-word="1034" go-word="113" go-link-index="1" self-link-index="0"  go-word2="624120" go-link-index2="2" self-link-index2="3" num="5." 
+                    x="6"  y="4">
+                        <input class="cell" type="text" data-index="0" data-char="1"  link="1" oninput="updateOtherInput(this)">
+                        <input class="cell" type="text" data-index="1" data-char="0">
+                        <input class="cell" type="text" data-index="2" data-char="3">
+                        <input class="cell" type="text" data-index="3" data-char="4" link="1" oninput="updateOtherInput2(this)">
+                    </div>
+                    <div class="word vertical" id="624120" self-word="624120" go-word="1034" go-link-index="3" self-link-index="2"  num="6." 
+                    x="9"  y="2">
+                        <input class="cell" type="text" data-index="0" data-char="6">
+                        <input class="cell" type="text" data-index="1" data-char="2">
+                        <input class="cell" type="text" data-index="2" data-char="4" link="1" oninput="updateOtherInput(this)">
+                        <input class="cell" type="text" data-index="3" data-char="1">
+                        <input class="cell" type="text" data-index="4" data-char="2">
+                        <input class="cell" type="text" data-index="5" data-char="0">
+                    </div>
+                    <!-- Add more words with inputs for your crossword puzzle -->
+                </div>
+            </div>
+            <div class="question-frame">
+                <h2>Across</h2>
+                <div class="prompts">
+                    <div class="prompt" data-prompt-for="23453">
+                        <p><span class="prompt-number">1.</span> 23452 + 1 = ?</p>
+                        <button class="check-button"><span id="trials">Check (Trials-left: 3)</span></p></button>
+                    </div>
+                    <div class="prompt" data-prompt-for="1333">
+                        <span class="prompt-number">3.</span> 
+                        <p>1330 + 3 = ?</p>
+                        <button class="check-button"><span id="trials">Check (Trials-left: 3)</span></p></button>
+                    </div>
+                    <div class="prompt" data-prompt-for="1034">
+                        <span class="prompt-number">5.</span> 
+                        <p>1035 - 1 = ?</p>
+                        <button class="check-button"><span id="trials">Check (Trials-left: 3)</span></p></button>
+                    </div>
+                </div>
+            </div>
+            <div class="question-frame">
+                <h2>Down</h2>
+                <div class="prompts">
+                    <div class="prompt" data-prompt-for="113">
+                        <span class="prompt-number">2.</span> 
+                        <p>110 + 3 = ?</p>
+                        <button class="check-button"><span id="trials">Check (Trials-left: 3)</span></p></button>
+                    </div>
+                    <div class="prompt" data-prompt-for="235136">
+                        <span class="prompt-number">4.</span> 
+                        <p>235131 + 5 = ?</p>
+                        <button class="check-button"><span id="trials">Check (Trials-left: 3)</span></p></button>
+                    </div>
+                    <div class="prompt" data-prompt-for="624120">
+                        <span class="prompt-number">6.</span> 
+                        <p>62412 * 10 = ?</p>
+                        <button class="check-button"><span id="trials">Check (Trials-left: 3)</span></p></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="task-bar">
+            <div class="point">
+                <p>Point: <span id="point">0</span></p>
+            </div>
+            <div class="timer">
+                <p>Time: <span id="timer">40:00</span></p>
+            </div>
+        </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
