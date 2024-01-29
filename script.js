@@ -168,7 +168,7 @@ function lockcell2(childElement, color) {
     word2text.querySelector(`[data-index="${goIndex}"]`).style.backgroundColor = color;
 }
 
-document.addEventListener("DOMContentLoaded", function() {
+function crosswordcoord() {
     const words = document.querySelectorAll('.word');
     const table = document.querySelector('.crossword');
     console.log(table.clientWidth)
@@ -185,7 +185,10 @@ document.addEventListener("DOMContentLoaded", function() {
         word.style.left = `${leftPosition}px`;
         word.style.top = `${topPosition}px`;
     });
-});
+}
+
+document.addEventListener("DOMContentLoaded", crosswordcoord);
+window.addEventListener("resize", crosswordcoord);
 
 function hasLinkAttribute(cellElement) {
     return cellElement.hasAttribute('link');

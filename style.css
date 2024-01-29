@@ -232,7 +232,7 @@ body{
 }
 
 .question-frame {
-    width: 20vw; 
+    width: calc((100vw - 60vh) * 0.37); 
     padding: 20px;
     background-color: #f9f9f9;
     margin-left: 10px;
